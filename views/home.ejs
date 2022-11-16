@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>demo chat</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <!-- <script src="socket.io/socket.io.js"></script> -->
+    <script src="https://vodeptrai.herokuapp.com/socket.io/socket.io.js"></script>
+    <script src="query.js"></script>
+
+</head>
+
+<body>
+    <div class="top-header"></div>
+    <div class="containe">
+        <div class="row" style="margin:0 0 30px 0">
+            <div class="col-12 tex-cent">
+                <h3>Chợ Búa Củ Cải</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container login-from">
+        <div class="row" style="margin:0 0 20px 0">
+            <div class="col-12 dl-fl">
+                <div class="left tex-cent">
+                    <p>Name</p>
+                </div>
+                <div class="right tex-cent">
+                    <p><input type="text" name="names" class="input-header names"></p>
+                </div>
+                <div class="btn-re tex-cent">
+                    <p class="btn-go">go chat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container chat-from">
+        <div class="row chat-box">
+            <div class="col-4 tex-cent" style="  background: #ececec;border-right: 1px solid #999;">
+                <h5 style=" padding: 5px 0;">User online</h5>
+                <div class="content-id">
+                </div>
+            </div>
+            <div class="col-8" style=" background: #ececec;">
+                <div class="content"></div>
+            </div>
+        </div>
+        <div class="row alertctn">
+            <div class="col-12 alertmss tex-cent">
+
+            </div>
+        </div>
+        <div class="row" style="padding:10px 20px">
+            <div class="col-4" style="padding:0">
+                <div class="hello-name tex-cent"></div>
+            </div>
+            <div class="col-7">
+                <input type="text" name="mess" class="input-header mess">
+            </div>
+            <div class="col-1">
+                <p class="btn-send">send</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
